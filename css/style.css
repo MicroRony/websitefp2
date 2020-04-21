@@ -1,0 +1,241 @@
+:root {
+  --main-color: hsl(0, 0%, 20%);
+  --secondary-color: hsl(0, 0%, 27%);
+  --overlay-color: hsla(0, 0%, 0%, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.6;
+  color: var(--main-color);
+  font-size: 1.1rem;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: none;
+}
+
+.navbar {
+  padding: 0.3rem 0;  
+  font-size: 1.2rem;
+}
+
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+}
+
+.navbar .nav {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav a {
+  padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+  color: hsl(0, 0%, 40%);
+}
+
+.section-a {
+  margin: 2rem 0;
+}
+
+.section-a .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-a .container h1 {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+
+.section-a .container p {
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--main-color);
+  color: hsl(0, 0%, 100%);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+.section-b {
+  position: relative;
+  background: url('../img/section-b.jpg') no-repeat center center/cover;
+  height: 600px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay-color);
+}
+
+.section-b-inner {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 0;
+  height: 100%;
+  max-width: 860px;
+  margin: auto;
+}
+
+.section-b-inner h3 {
+  font-size: 3rem;
+}
+
+.section-b-inner h2 {
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.section-b-inner p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.section-c .gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.section-c .gallery a:first-child {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.section-c .gallery a:nth-child(2) {
+  grid-column: 3/5;
+}
+
+.section-c .gallery img, .section-c .gallery a {
+  width: 100%;
+  height: 100%;
+}
+
+.section-footer {
+  background: var(--main-color);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.section-footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.section-footer a {
+  color: #ccc;
+  line-height: 1.9;
+}
+
+.section-footer h2, .section-footer h3 {
+  margin-bottom: 1rem;
+}
+
+.section-footer h2 {
+  font-size: 2rem;
+}
+
+.section-footer a > i {
+  color: hsl(0, 0%, 33%);
+  margin-right: 5px;
+}
+
+.email-form {
+  width: 100%;
+  background-color: #555;
+  line-height: 0;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 20px;
+  position: relative;
+}
+
+.email-form .form-control {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0 3rem 0 1.5rem;
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.email-form .submit {
+  background: #eee;
+  color: var(--secondary-color);
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+}
