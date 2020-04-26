@@ -120,7 +120,7 @@ ul {
 }
 
 .showcase img {
-  transform: translateX(100px);
+  transform: translateX(50px);
 }
 
 
@@ -164,7 +164,6 @@ ul {
 .section-b .gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* height: 50vh; */
 }
 
 .section-b .gallery a, 
@@ -191,7 +190,7 @@ ul {
 .section-footer .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 4rem 0;
+  padding: 4rem 0 1rem 0;
   grid-gap: 3rem;
   font-size: 0.8rem;
   align-items: center;
@@ -201,7 +200,6 @@ ul {
 
 .section-footer .container h2 {
   font-size: 2rem;
-  /* line-height: 1; */
 }
 
 .section-footer .container h3 {
@@ -220,6 +218,15 @@ ul {
 .section-footer a > i {
   margin-right: 1rem;
   color: var(--secondary-color);
+}
+
+.section-footer div:nth-child(5) {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-Size: 1rem;
+  padding: 0;
 }
 
 .email-form {
